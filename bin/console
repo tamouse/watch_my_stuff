@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+$:.unshift(File.expand_path("../../lib", __FILE__ ))
+
+require "bundler/setup"
+require "watch_my_stuff"
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+
+WatchMyStuff.configure
+Octokit.auto_paginate = true
+
+$tamouse = Octokit::Client.new(login: "tamouse", password: WatchMyStuff::Configuration.two_fa)
+
+require "pry"
+Pry.start

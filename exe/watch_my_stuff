@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require "watch_my_stuff"
+WatchMyStuff.run!

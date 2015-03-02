@@ -1,0 +1,11 @@
+# Sample WatchMyStuff configuration file.
+#
+# Copy this to config/github.yml and change the values accordingly.
+#
+# You can create your own authorization token at:
+# https://github.com/settings/applications in the Personal access
+# tokens section. Set the token to be able to access repo, user,
+# notifications, gist
+#
+user: "github user"
+token: "github authorization token"
